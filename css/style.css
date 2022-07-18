@@ -3,19 +3,19 @@ body {
   /* background-color: aliceblue; */
   font-size: 18px;
 }
-
+ 
 .btn:hover {
   color: var(--bs-btn-hover-color);
-  background-color: orangered;
+  background-color: #111560;
   border-color: var(--bs-btn-hover-border-color);
 }
 .bg-danger {
   --bs-bg-opacity: 1;
-  background-color:orangered !important;
+  background-color:#111560 !important;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: var(--bs-nav-pills-link-active-color);
-  background-color: #17423e !important;
+  background-color: #ff383f !important;
 }
 
 /* socail icon */
@@ -31,7 +31,7 @@ body {
   background: 0 0;
   border: 0;
   border-radius: var(--bs-nav-pills-border-radius);
-  color: black;
+  color: white;
   font-size: 16px;
   font-family: auto;
 }
@@ -91,7 +91,7 @@ body {
 }
 .heading-title {
   font-weight: 700;
-  color: orangered;
+  color: #ff383f;
 }
 
 /* footer start */
@@ -101,7 +101,7 @@ footer .nav-item a {
 }
 footer h5 {
   font-weight: 700;
-  color: yellow;
+  color: #ff383f;
 }
 
 /* our salient feature */
@@ -159,7 +159,7 @@ cursor: pointer;
 }
 .gtco-testimonials .owl-dots .active {
   box-shadow: none;
-  /* background-color: orangered !important; */
+  /* background-color: #111560 !important; */
 }
 .gtco-testimonials .owl-dots .active span {
   background: #01b0f8;
@@ -208,7 +208,7 @@ cursor: pointer;
   
 }
 .gtco-testimonials .center .card{
-  background-color: orangered;
+  background-color: #111560;
   
 }
 .gtco-testimonials .center h5 {
@@ -265,7 +265,7 @@ cursor: pointer;
   transform-style: preserve-3d;
   perspective: 500px;
   border: none;
-  background-color: orangered;
+  background-color: #111560;
 }
 
 .card .face {
@@ -454,5 +454,64 @@ border-bottom: 1px solid #999; */
 .activities .card-title{
  font-size: 20px;
  font-weight: 600;
- color: orangered;
+ color: #111560;
 }
+
+/* our courses  */
+.d-1 {
+  --c: #1095c1; /* the color */
+  --b: .1em;    /* border length*/
+  --d: 20px;    /* the cube depth */
+  
+  --_s: calc(var(--d) + var(--b));
+  
+  color: var(--c);
+  border: solid #0000;
+  border-width: var(--b) var(--b) var(--_s) var(--_s);
+  background:
+    conic-gradient(at left var(--d)  bottom var(--d),
+      #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+    conic-gradient(at left var(--_s) bottom var(--_s),
+      #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+  transform: translate(calc(var(--d)/-1),var(--d));
+  clip-path: 
+    polygon(
+     var(--d) 0%, 
+     var(--d) 0%, 
+     100% 0%, 
+     100% calc(100% - var(--d)),
+     100% calc(100% - var(--d)),
+     var(--d) calc(100% - var(--d))
+    );
+  transition: 0.5s;
+}
+.d-1:hover {
+  transform: translate(0,0);
+  clip-path: 
+    polygon(
+     0% var(--d), 
+     var(--d) 0%, 
+     100% 0%, 
+     100% calc(100% - var(--d)), 
+     calc(100% - var(--d)) 100%, 
+     0% 100%
+   );
+}
+
+.hover-4 {
+  border: 8px solid;
+  border-image: repeating-linear-gradient(135deg,#F8CA00 0 10px,#E97F02 0 20px,#BD1550 0 30px) 8;
+  -webkit-mask: 
+    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+     var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+    conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+     0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
+  transition: .3s, -webkit-mask-position .3s .3s;
+}
+.hover-4:hover {
+  --_i: 100%;
+  color: #CC333F;
+  transition: .3s, -webkit-mask-size .3s .3s;
+}
+
