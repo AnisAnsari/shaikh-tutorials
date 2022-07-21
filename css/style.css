@@ -18,7 +18,7 @@ body {
   color: var(--bs-nav-pills-link-active-color);
   background-color: #ff383f !important;
 }
-.bg-red{
+.bg-red {
   background-color: #ff383f !important;
 }
 
@@ -55,7 +55,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  /* height: 32rem; */
 }
 .carousel-item img {
   width: 100%;
@@ -559,45 +559,42 @@ nav > div a.nav-item.nav-link:focus {
   background-color: #dbd9d9;
 
   --c: #111560; /* the color */
-  
-  color: #111560;
-  background: 
-    linear-gradient(90deg,rgb(235, 234, 234) 50%,var(--c) 0) calc(100% - var(--_p,0%))/200% 100%,
-    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
-  transition: 0.5s; 
 
+  color: #111560;
+  background: linear-gradient(90deg, rgb(235, 234, 234) 50%, var(--c) 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) 100% no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
 }
 .news .owl-carousel .item:hover {
   --_p: 100%;
-  color:#fff;
-  
+  color: #fff;
 }
 
 .news .owl-carousel .item:hover .btn {
-    border-radius: 0px;
-    width: 100%;
-    background-color: #ff383f;
-    color: white;
+  border-radius: 0px;
+  width: 100%;
+  background-color: #ff383f;
+  color: white;
 }
 
-.news .owl-carousel .item p{
+.news .owl-carousel .item p {
   padding: 30px 10px;
-
 }
-.news .owl-carousel .item .btn{
+.news .owl-carousel .item .btn {
   border-radius: 0px;
   width: 100%;
   /* background-color: white; */
 }
 
-.owl-theme .owl-nav [class*=owl-] {
-  color: #FFF;
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #fff;
   font-size: 14px;
   margin: 5px;
   padding: 4px 7px;
-  background: #D6D6D6;
+  background: #d6d6d6;
   display: inline-block;
   cursor: pointer;
   border-radius: 3px;
@@ -606,16 +603,16 @@ nav > div a.nav-item.nav-link:focus {
 
 .hover-news {
   --c: #1095c1; /* the color */
-  
+
   color: #111560;
-  background: 
-    linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200% 100%,
-    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
+  background: linear-gradient(90deg, #fff 50%, var(--c) 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) 100% no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
   transition: 0.5s;
 }
 .hover-news:hover {
   --_p: 100%;
-  color:#fff;
+  color: #fff;
 }
