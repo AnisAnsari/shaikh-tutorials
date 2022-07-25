@@ -21,6 +21,11 @@ body {
 .bg-red {
   background-color: #ff383f !important;
 }
+.text-primary {
+  --bs-text-opacity: 1;
+  /* color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important; */
+  color: #111560 !important;
+}
 
 /* socail icon */
 .social-icon a {
@@ -256,12 +261,12 @@ footer h5 {
     background: linear-gradient(-135deg, #fae37d, #881da8, #20668f);
   }
 }
-.container .col-lg-4 {
+/* .container .col-lg-4 {
   display: flex;
   justify-content: center;
-}
+} */
 
-.card {
+.our-toper .card {
   width: 300px;
   height: 300px;
   transform-style: preserve-3d;
@@ -270,7 +275,7 @@ footer h5 {
   background-color: #111560;
 }
 
-.card .face {
+.our-toper .card .face {
   position: absolute;
   color: #fff;
   width: 100%;
@@ -288,8 +293,8 @@ footer h5 {
 border-bottom: 1px solid #999; */
 }
 
-.card .face.front-face,
-.card .face.back-face {
+.our-toper .card .face.front-face,
+.our-toper .card .face.back-face {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -297,28 +302,28 @@ border-bottom: 1px solid #999; */
   justify-content: center;
 }
 
-.card .face.front-face .profile {
+.our-toper .card .face.front-face .profile {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.card .face.front-face .name {
+.our-toper .card .face.front-face .name {
   letter-spacing: 2px;
 }
 
-.card .face.front-face .designation {
+.our-toper .card .face.front-face .designation {
   font-size: 0.8rem;
   color: #ddd;
   letter-spacing: 0.8px;
 }
 
-.card:hover .face.front-face {
+.our-toper .card:hover .face.front-face {
   transform: rotateY(180deg);
 }
 
-.card .face.back-face {
+.our-toper .card .face.back-face {
   position: absolute;
   background: rgba(255, 255, 255, 0.06);
   transform: rotateY(180deg);
@@ -327,21 +332,21 @@ border-bottom: 1px solid #999; */
   user-select: none;
 }
 
-.card .face.back-face .fa-quote-left {
+.our-toper .card .face.back-face .fa-quote-left {
   position: absolute;
   top: 25px;
   left: 25px;
   font-size: 1.2rem;
 }
 
-.card .face.back-face .fa-quote-right {
+.our-toper .card .face.back-face .fa-quote-right {
   position: absolute;
   bottom: 35px;
   right: 25px;
   font-size: 1.2rem;
 }
 
-.card:hover .face.back-face {
+.our-toper .card:hover .face.back-face {
   transform: rotateY(360deg);
 }
 
@@ -615,4 +620,13 @@ nav > div a.nav-item.nav-link:focus {
 .hover-news:hover {
   --_p: 100%;
   color: #fff;
+}
+
+.side-bar a{
+  text-decoration: none;
+  /* background-color: #000; */
+}
+.side-bar .list-group-item:hover{
+  background-color:  rgb(240, 238, 238) !important;
+  /* color: rgb(211, 209, 209); */
 }

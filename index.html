@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shaikh Tuturials</title>
+    <title>Home | Shaikh Tuturials</title>
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,7 +80,7 @@
     <nav class="navbar navbar-expand-lg bg-danger sticky-top">
       <div class="container px-0">
         <div class="">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" alt="" width="70" height="auto" />
           </a>
         </div>
@@ -101,9 +101,9 @@
         >
           <ul class="nav nav-pills align-content-around">
             <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">Home</a>
+              <a href="index.html" class="nav-link active" aria-current="page">Home</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -116,8 +116,8 @@
                 Courses
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">IIT - JEE</a></li>
-                <li><a class="dropdown-item" href="#">NEET action</a></li>
+                <li><a class="dropdown-item" href="iit-jee.html">IIT - JEE</a></li>
+                <li><a class="dropdown-item" href="#">NEET</a></li>
                 <li>
                   <a class="dropdown-item" href="#">MH-CET</a>
                 </li>
@@ -282,9 +282,11 @@
               </div>
 
               <div class="col p-3 text-center">
-                <button type="button" class="btn btn-outline-danger px-4">
-                  View More
-                </button>
+                <a href="about-us.html">
+                  <button type="button" class="btn btn-outline-danger px-4">
+                    View More
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -734,7 +736,7 @@
             <div class="gtco-testimonials">
               <div class="owl-carousel owl-carousel1 owl-theme">
                 <div>
-                  <div class="card text-center bg-danger opacity-50">
+                  <div class="card text-center bg-danger">
                     <img
                       class="card-img-top"
                       src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300"
@@ -1134,98 +1136,6 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script>
-      (function () {
-        "use strict";
-
-        var carousels = function () {
-          $(".owl-carousel1").owlCarousel({
-            loop: true,
-            center: true,
-            margin: 0,
-            responsiveClass: true,
-            nav: false,
-            responsive: {
-              0: {
-                items: 1,
-                nav: false,
-              },
-              680: {
-                items: 2,
-                nav: false,
-                loop: false,
-              },
-              1000: {
-                items: 3,
-                nav: true,
-              },
-            },
-          });
-        };
-
-        (function ($) {
-          carousels();
-        })(jQuery);
-      })();
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        $(".items").slick({
-          dots: true,
-          infinite: true,
-          speed: 800,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true,
-              },
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 3,
-            },
-            1000: {
-              items: 4,
-            },
-          },
-        });
-      });
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
